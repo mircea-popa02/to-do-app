@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: repeating-linear-gradient(to bottom right, #0b111c, #0d1d30)
+    left  / 150%   300% no-repeat;
+}
+.task {
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    min-width: 30%;
+    background-color: #0d1d30;
+    color: #e9feff;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 3vh auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #152137;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: #e9feff;
+}
+
+.delete {
+    color: #e9feff;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 1.5%;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 0 10px #eca22c, 0 0 20px #eca22c, 0 0 2px #eca22c;
+    display: flex;
+    background-image: linear-gradient(to bottom right, #0d1d30, #0d1d30);
+}
+
+
+.comments {
+    max-width: 60%;
+    border-radius: 0.5rem;
+    color: #e9feff;
+    font-size: 1rem;
+    padding: 1.5%;
+    font-weight: 600;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 2px #03e9f4;
+    background-image: linear-gradient(to bottom right, #0d1d30, #0d1d30);
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.login-box {
+    margin: auto;
+    width: 30%;
+    padding: 2%;
+    background:  linear-gradient(to bottom right, #0d1d30, #0b111c);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 13%;
+    height: 20%;
+    border: 1.5px solid #152137;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+}
+
+.bgimg {
+    width: 40%;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #e9feff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.login-box .user-box {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #e9feff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #e9feff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.check img{
+    width: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 0.1rem;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+
+.login-box a:hover {
+    background: #03e9f4;
+    color: #e9feff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+    
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+    
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
