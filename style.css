@@ -45,7 +45,6 @@ html, body {
     min-width: 30vh;
     background-color: #0d1d30;
     color: #e9feff;
-    font-size: 2vw;
     border-radius: 2vh;
     padding-left: 2vh;
     padding-right: 1.5vw;;
@@ -56,11 +55,44 @@ html, body {
     border: 1.5px solid #152137;
     margin-left: 12vh;
     min-width: 30vh;
+    font-size: 2vw;
 }
 
 @media screen and (max-width: 768px) {
     .completed {
         display: none;
+    }
+
+    .login-box form a {
+        font-size: 1.5vh !important;
+    }
+
+    .login-box h2 {
+        font-size: 3vh !important;
+    }
+
+    .login-box .user-box label {
+        font-size: 1.5vh !important;
+    }
+
+    .filter h3 {
+        font-size: 3vh !important;
+    }
+
+    .footer h1 {
+        font-size: 3vh !important;
+    }
+
+    .footer {
+        font-size: 1.5vh !important;
+    }
+
+    .login-box .user-box input {
+        font-size: 1.5vh !important;
+    }
+
+    .login-box .user-box {
+        margin-top: 2vh !important;
     }
 
     .button {
@@ -168,7 +200,7 @@ html, body {
     border-radius: 0.5vw;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1vw;
     margin-left: 3%;
     text-align: center;
     padding: 0.5vw;
@@ -211,6 +243,7 @@ html, body {
     padding: 4%;
     color: #e9feff;
     background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0), #0d1d30, #152137);
+    font-size: 1vw;
 }
 
 .footer h1 {
@@ -220,6 +253,7 @@ html, body {
     margin-bottom: 2vh;
     font-weight: 700;
     color: #e9feff;
+    font-size: 2vw;
 }
 
 #done {
@@ -355,12 +389,13 @@ html, body {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 800;
+    margin-top: 3vw;
 }
 
 .login-box .user-box input {
     width: 100%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: #e9feff;
     margin-bottom: 30px;
     border: none;
@@ -374,10 +409,14 @@ html, body {
     top: 0;
     left: 0;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: #e9feff;
     pointer-events: none;
     transition: 0.5s;
+}
+
+.filter h3 {
+    font-size: 2vw;
 }
 
 .check img {
@@ -388,10 +427,10 @@ html, body {
 
 .login-box .user-box input:focus~label,
 .login-box .user-box input:valid~label {
-    top: -20px;
+    top: -3vh;
     left: 0;
     color: #03e9f4;
-    font-size: 12px;
+    font-size: 1vw;
 }
 
 .login-box form a {
@@ -399,7 +438,7 @@ html, body {
     display: inline-block;
     padding: 10px 20px;
     color: #03e9f4;
-    font-size: 1rem;
+    font-size: 1.5vw;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
