@@ -1,4 +1,4 @@
-let tasks = JSON.parse(localStorage.getItem('myTaskList')) || []
+let myTasks = JSON.parse(localStorage.getItem('myTaskList')) || []
 
 const addTask = (ev) => {
     ev.preventDefault()
@@ -12,22 +12,22 @@ const addTask = (ev) => {
         return;
     }
 
-    tasks.push(task)
+    myTasks.push(task)
     document.forms[0].reset()
 
-    localStorage.setItem('myTaskList', JSON.stringify(tasks) )
+    localStorage.setItem('myTaskList', JSON.stringify(myTasks) )
     location.reload()
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btn').addEventListener('click', addTask);
 });
 
+
 var element = document.getElementById("input");
 element.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
-    addMovie(event);
+    addTask(event);
     event.preventDefault();
     }
 });
@@ -39,3 +39,4 @@ element.addEventListener("keypress", function(event) {
     event.preventDefault();
     }
 });
+
