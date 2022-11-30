@@ -121,7 +121,7 @@ const changeToAll = (ev) => {
         task +=
         `<div class="task" id = ${ids[i]}>
             ${i + 1}. ${completeTasks[i].input}
-            <div ondblclick="this.contentEditable=true;this.className='inEdit';" onblur="this.contentEditable=false;this.className='';" contenteditable="false" id="task-details">
+            <div ondblclick="this.contentEditable=true;this.className='inEdit';" onblur="this.contentEditable=false;this.className='';" contenteditable="false" id="task-details-orange">
                 ${completeTasks[i].comments}
             </div>
             <button id="delete" onclick="removeTask(${completeTasks[i].id})">
@@ -165,7 +165,7 @@ const changeToCompleted = (ev) => {
         task +=
         `<div class="task" id = ${ids[i]}>
             ${i + 1}. ${completeTasks[i].input}
-            <div ondblclick="this.contentEditable=true;this.className='inEdit';" onblur="this.contentEditable=false;this.className='';" contenteditable="false" id="task-details">
+            <div ondblclick="this.contentEditable=true;this.className='inEdit';" onblur="this.contentEditable=false;this.className='';" contenteditable="false" id="task-details-orange">
                 ${completeTasks[i].comments}
             </div>
             <button id="delete" onclick="removeTask(${completeTasks[i].id})">

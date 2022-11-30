@@ -20,22 +20,21 @@ html, body {
     display: flex;
     flex-direction: row;
     max-width: 70%;
-    min-width: 70vw;
+    min-width: 30vh;
     background-color: #0d1d30;
     color: #e9feff;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    padding: 2%;
+    font-size: 1.5vw;
+    border-radius: 0.7vw;
+    padding: 1vh;
     padding-left: 2%;
-    padding-right: 2%;
     margin: 3vh;
     margin-left: 15vh;
     justify-content: space-between;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    font-weight: 800;
+    font-weight: 600;;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-    border: 1.5px solid #152137;
+    border: 0.1vw solid #152137;
     margin-left: 12vh;
 }
 
@@ -43,54 +42,62 @@ html, body {
     display: flex;
     flex-direction: row;
     max-width: 70%;
-    min-width: 70vw;
+    min-width: 30vh;
     background-color: #0d1d30;
     color: #e9feff;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    padding-left: 2%;
-    padding-right: 2%;
+    font-size: 2vw;
+    border-radius: 2vh;
+    padding-left: 2vh;
+    padding-right: 1.5vw;;
     margin: 3vh;
     justify-content: space-between;
     align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border: 1.5px solid #152137;
     margin-left: 12vh;
+    min-width: 30vh;
 }
 
 @media screen and (max-width: 768px) {
+    .completed {
+        display: none;
+    }
+
     .button {
-        padding: 3% !important;
+        padding: 1vh !important;
+        margin-bottom: 1vh;
+        min-width: 15vh;
+        font-size: 2vh !important;
+        border-radius: 1vh !important;
     }
 
     .task {
         margin: auto;
         flex-direction: column;
-        padding: 3%;
+        padding: 1vh;
         margin-top: 3vh;
         justify-content: space-between;
-        max-height: 30vh;
+        max-height: 50vh;
+        font-size: 2.5vh;
+        border-radius: 2vh;
     }
 
     .filter {
         display: block;
         margin: auto;
         flex-direction: column;
-        min-width: 10%;
-        padding: 3%;
-        padding-top: 1% !important;
         justify-content: space-between;
         max-height: 20vh;
         align-items: flex-start;
-        padding-bottom: 8%;
+        max-height: 60vh;
+        padding: 1vh;
+        text-align: center;
+        font-size: 3vh;
     }
 
     .container-mobile {
         display: block !important;
         margin: auto;
-
     }
 
     .container {
@@ -107,7 +114,18 @@ html, body {
 
     #task-details {
         min-width: 20%;
-        margin: 2.5vh;
+        margin: 2vh;
+        padding: 1.5vh !important;
+        font-size: 1.5vh !important;
+        border-radius: 1vh !important;
+    }
+
+    #task-details-orange {
+        min-width: 20%;
+        margin: 2vh;
+        padding: 1.5vh !important;
+        font-size: 1.5vh !important;
+        border-radius: 1vh !important;
     }
 
     .bgimg {
@@ -117,6 +135,28 @@ html, body {
     .footer {
         padding-left: 10%;
     }
+
+    #delete {
+        margin-top: 1vh !important;
+        font-size: 1.5vh !important;
+        padding: 1vh !important;
+        border-radius: 1vh !important;
+    }
+
+    .check img {
+        width: 1.5vh !important;
+    }
+
+    .completed img {
+        width: 1.5vh !important;
+    }
+
+    #done {
+        margin-top: 1vh !important;
+        font-size: 1.5vh !important;
+        padding: 1vh !important;
+        border-radius: 1vh !important;
+    }
 }
 
 .button {
@@ -125,18 +165,18 @@ html, body {
     background-color: #0b111c;
     max-width: 40%;
     height: 20%;
-    border-radius: 10px;
+    border-radius: 0.5vw;
     font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 300;
+    font-size: 1.5vw;
     margin-left: 3%;
     text-align: center;
-    padding: 1.5%;
+    padding: 0.5vw;
     transition: 0.3s;
+    margin-right: 2vh;
 }
 
 .button:hover {
-    background-color:#152136 ;
     background-color: #28394e;
     cursor: pointer;
     border: 1.5px solid #152137; 
@@ -168,8 +208,9 @@ html, body {
     justify-content: center;
     align-items: center;
     margin-top: 2vh;
-    margin-bottom: 5vh;
+    padding: 4%;
     color: #e9feff;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0), #0d1d30, #152137);
 }
 
 .footer h1 {
@@ -183,15 +224,16 @@ html, body {
 
 #done {
     color: #e9feff;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    padding: 1.5%;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     border: 1.5px solid #03e9f4;
     display: flex;
     background-color: #0b111c;
     transition: 0.3s;
+    background-image: linear-gradient(to bottom right, #0d1d30, #0d1d30);
 }
 
 #done:hover {
@@ -199,42 +241,64 @@ html, body {
     box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 2px #03e9f4;
 }
 
+
 #delete {
     color: #e9feff;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    padding: 1.5%;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     border: 1.5px solid #eca22c;
     display: flex;
-    background-color: #0b111c;
     transition: 0.3s;
+    background-image: linear-gradient(to bottom right, #0d1d30, #0d1d30);
 }
 
 #delete:hover {
     cursor: pointer;
     box-shadow: 0 0 10px #eca22c, 0 0 20px #eca22c, 0 0 2px #eca22c;
-    border: 1.5px solid #152137;
 }
 
 #task-details {
     word-wrap: break-word;
     max-width: 60%;
     min-width: 20%;
-    border-radius: 0.5rem;
-    color: #e9feff;
-    font-size: 1rem;
-    padding: 1.5%;
-    font-weight: 600;
+    border-radius: 0.7vw;
+    color: #e9eaff;
+    padding: 0.5vw;
+    font-weight: 300;
+    text-align: center;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 2px #03e9f4;
     background-image: linear-gradient(to bottom right, #0d1d30, #0d1d30);
     margin-right: 2vw;
     margin-left: 2vw;
+    font-size: 1vw;
+}
+
+#task-details-orange {
+    word-wrap: break-word;
+    max-width: 60%;
+    min-width: 20%;
+    border-radius: 0.7vw;
+    color: #e9feff;
+    padding: 0.5vw;
+    font-weight: 400;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px #eca22c, 0 0 20px #eca22c, 0 0 2px #eca22c;
+    background-image: linear-gradient(to bottom right, #0d1d30, #0d1d30);
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-size: 1vw;
+    text-align: center;
 }
 
 .login-box {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
     min-width: 20%;
     width: 30%;
@@ -259,11 +323,11 @@ html, body {
 
 .completed {
     color: #e9feff;
-    font-size: 2rem;
-    padding: 1.5%;
+    font-size: 2vw;
+    padding: 1vw;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
-    padding-left: 7vw;
+    padding-left: 10vw;
     text-align: left;
 }
 
@@ -274,7 +338,7 @@ html, body {
 }
 
 .bgimg {
-    width: 40%;
+    width: 40vw;
 }
 
 .login-box h2 {
@@ -284,7 +348,7 @@ html, body {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .login-box .user-box {
@@ -316,8 +380,8 @@ html, body {
     transition: 0.5s;
 }
 
-.check img{
-    width: 1rem;
+.check img {
+    width: 1vw;
     padding-left: 0.5rem;
     padding-top: 0.1rem;
 }
