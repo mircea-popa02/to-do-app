@@ -40,7 +40,6 @@ html, body {
 }
 
 .filter {
-    /* word-wrap: break-word; */
     display: flex;
     flex-direction: row;
     max-width: 70%;
@@ -108,7 +107,7 @@ html, body {
 
     #task-details {
         min-width: 20%;
-        margin: 1.5vh;
+        margin: 2.5vh;
     }
 
     .bgimg {

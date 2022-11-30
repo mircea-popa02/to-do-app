@@ -208,7 +208,6 @@ function removeTask(id) {
         if (completeTasks[i].id == id) {
             completeTasks.splice(i, 1);
             localStorage.setItem('myCompletedTasks', JSON.stringify(completeTasks));
-            // changeToCompleted();
             location.reload();
         }
     }
